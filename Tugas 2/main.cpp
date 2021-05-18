@@ -3,8 +3,7 @@
 
 #include <iostream>
 #include <stdlib.h>
-#include <limits>
-#include <ios>
+
 
 using namespace std;
 
@@ -260,7 +259,7 @@ int main() {
         if(cin.fail()){
 	    cout<<"\n Maaf, Inputan Harus Berupa Angka!";
             cin.clear();
-            cin.ignore(numeric_limits<streamsize>::max(), '\n');
+            cin.ignore();
 		} else if (pil == 1) {
             cout<<" Masukan Data = ";
             cin>>dataBaru;
