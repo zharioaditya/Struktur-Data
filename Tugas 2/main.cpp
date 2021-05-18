@@ -258,9 +258,9 @@ int main() {
         cin>>pil;
 
         if(cin.fail()){
+	    cout<<"\n Maaf, Inputan Harus Berupa Angka!";
             cin.clear();
             cin.ignore(numeric_limits<streamsize>::max(), '\n');
-            cout<<"\n Maaf, Inputan Harus Berupa Angka!";
 		} else if (pil == 1) {
             cout<<" Masukan Data = ";
             cin>>dataBaru;
